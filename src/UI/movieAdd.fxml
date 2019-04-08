@@ -1,0 +1,19 @@
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Spinner?>
+<VBox fx:controller="UI.MovieAddController"
+      xmlns:fx="http://javafx.com/fxml" alignment="center">
+
+    <Spinner fx:id="spnId" initialValue="0" editable="true" min="0" max="2000000000"/>
+    <TextField fx:id="txtTitle" promptText="Title"/>
+    <TextField fx:id="txtYear" promptText="Year"/>
+    <TextField fx:id="txtPrice" promptText="Price"/>
+    <CheckBox fx:id="chkAvalible" text="Avalible"/>
+
+    <Button text="Add" fx:id="btnAdd" onAction="#btnAddClick" />
+    <Button text="Cancel" fx:id="btnCancel" onAction="#btnCancelClick" />
+</VBox>
